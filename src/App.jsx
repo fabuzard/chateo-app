@@ -1,6 +1,7 @@
 
 import loginImage from "./assets/login-light.png"
 import BlueButton from "./components/Buttons/BlueButton"
+import { Link } from "react-router-dom"
 function App() {
 
 
@@ -9,7 +10,9 @@ function App() {
       <img src={loginImage} alt="" className="mt-32"/>
      <h1 className="mt-10 font-mulish text-2xl font-bold max-w-64 text-center text-active">Connect easily with your family and friends over countries</h1>
       <p className="mt-32 font-mulish font-semibold text-sm">Terms & Privacy Policy</p>
+      <Link to={"/login"}>
     <BlueButton text="Start Messaging" className="mt-4"/>
+      </Link>
     </div>
 
   )
